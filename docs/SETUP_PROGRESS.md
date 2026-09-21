@@ -16,7 +16,7 @@ Publication: https://hoodlem4real.substack.com (personal Substack; name follows 
 - [x] Hero post DRAFT (post 216679639) - NOT published, needs owner review; pin after publishing
 - [ ] Logo / wordmark / cover image
 - [ ] First real issue: run the pipeline on real data (needs GITHUB_TOKEN, posts.jsonl, Docker)
-- [ ] Subscribe to 25 builder/AI publications
+- [x] Subscribed to 30 builder/AI publications (2 -> 32 total, 2026-09-20)
 - [ ] LinkedIn + GitHub profile links (need LinkedIn URL)
 - [ ] Schedule posts for 6:00 AM PT
-- [ ] Decide: make GitHub repo public (the "How I make this" statement says test scripts are public)
+- [x] GitHub repo made public 2026-09-20 (history scanned for secrets first: clean)
