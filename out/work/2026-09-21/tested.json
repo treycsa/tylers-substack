@@ -1,0 +1,210 @@
+{
+  "scanned_posts": 5,
+  "unique_repos": 4,
+  "reviews": [
+    {
+      "repo": {
+        "full_name": "astral-sh/uv",
+        "url": "https://github.com/astral-sh/uv",
+        "description": "An extremely fast Python package and project manager, written in Rust.",
+        "stars": 62000,
+        "forks": 6200,
+        "stars_7d": 900,
+        "created_at": "2024-10-21T03:58:38.184686+00:00",
+        "pushed_at": "2026-09-21T03:58:38.184686+00:00",
+        "commits_30d": 180,
+        "unique_committers_30d": 25,
+        "open_issues": 1033,
+        "license": "MIT",
+        "has_ci": true,
+        "latest_release": "0.8.3",
+        "language": "Python",
+        "readme": "# uv\nA drop-in replacement for pip, pip-tools, and virtualenv. 10-100x faster than pip.",
+        "dependency_count": 12,
+        "mentioned_by": [],
+        "mention_count": 2
+      },
+      "score": {
+        "traction": 10.0,
+        "maintenance": 10.0,
+        "runs_out_of_box": null,
+        "novelty": 7.0,
+        "license_safety": 10.0,
+        "fit": null,
+        "rationale": {
+          "traction": "62,000 stars over 700d, 900 in the last 7d, 25 committers/30d",
+          "maintenance": "180 commits/30d, CI yes, release 0.8.3, 1033 open issues",
+          "license_safety": "MIT",
+          "novelty": "heuristic"
+        }
+      },
+      "claims": "An extremely fast Python package and project manager, written in Rust.",
+      "why_scored": "traction: 62,000 stars over 700d, 900 in the last 7d, 25 committers/30d; maintenance: 180 commits/30d, CI yes, release 0.8.3, 1033 open issues; license_safety: MIT; novelty: heuristic",
+      "test_summary": "pip install / clone astral-sh/uv, run the README quickstart, confirm one call succeeds.",
+      "test_snippet": "",
+      "verdict": "",
+      "label": "WATCHING",
+      "test": {
+        "passed": false,
+        "duration_s": 0.0,
+        "command": "(docker unavailable)",
+        "stdout_tail": "",
+        "script_path": "tested-daily/2026-09-21/astral-sh__uv/run.sh",
+        "notes": "Docker not available; test not run. Label cannot be ADOPTED."
+      }
+    },
+    {
+      "repo": {
+        "full_name": "BerriAI/litellm",
+        "url": "https://github.com/BerriAI/litellm",
+        "description": "Call 100+ LLM APIs in the OpenAI format.",
+        "stars": 28000,
+        "forks": 2800,
+        "stars_7d": 400,
+        "created_at": "2024-04-04T03:58:38.184686+00:00",
+        "pushed_at": "2026-09-21T03:58:38.184686+00:00",
+        "commits_30d": 220,
+        "unique_committers_30d": 40,
+        "open_issues": 466,
+        "license": "MIT",
+        "has_ci": true,
+        "latest_release": "v1.77.0",
+        "language": "Python",
+        "readme": "# litellm\nUnified interface, fallbacks, spend tracking. Alternative to writing per-provider clients.",
+        "dependency_count": 12,
+        "mentioned_by": [],
+        "mention_count": 1
+      },
+      "score": {
+        "traction": 10.0,
+        "maintenance": 10.0,
+        "runs_out_of_box": null,
+        "novelty": 6.5,
+        "license_safety": 10.0,
+        "fit": null,
+        "rationale": {
+          "traction": "28,000 stars over 900d, 400 in the last 7d, 40 committers/30d",
+          "maintenance": "220 commits/30d, CI yes, release v1.77.0, 466 open issues",
+          "license_safety": "MIT",
+          "novelty": "heuristic; compares itself to litellm, openai"
+        }
+      },
+      "claims": "Call 100+ LLM APIs in the OpenAI format.",
+      "why_scored": "traction: 28,000 stars over 900d, 400 in the last 7d, 40 committers/30d; maintenance: 220 commits/30d, CI yes, release v1.77.0, 466 open issues; license_safety: MIT; novelty: heuristic; compares itself to litellm, openai",
+      "test_summary": "pip install / clone BerriAI/litellm, run the README quickstart, confirm one call succeeds.",
+      "test_snippet": "",
+      "verdict": "",
+      "label": "WATCHING",
+      "test": {
+        "passed": false,
+        "duration_s": 0.0,
+        "command": "(docker unavailable)",
+        "stdout_tail": "",
+        "script_path": "tested-daily/2026-09-21/BerriAI__litellm/run.sh",
+        "notes": "Docker not available; test not run. Label cannot be ADOPTED."
+      }
+    },
+    {
+      "repo": {
+        "full_name": "pola-rs/polars",
+        "url": "https://github.com/pola-rs/polars",
+        "description": "Dataframes powered by a multithreaded, vectorized query engine, written in Rust.",
+        "stars": 35000,
+        "forks": 3500,
+        "stars_7d": 250,
+        "created_at": "2022-08-13T03:58:38.184686+00:00",
+        "pushed_at": "2026-09-21T03:58:38.184686+00:00",
+        "commits_30d": 300,
+        "unique_committers_30d": 60,
+        "open_issues": 583,
+        "license": "MIT",
+        "has_ci": true,
+        "latest_release": "py-1.33.0",
+        "language": "Python",
+        "readme": "# Polars\nFaster than pandas.",
+        "dependency_count": 12,
+        "mentioned_by": [],
+        "mention_count": 1
+      },
+      "score": {
+        "traction": 10.0,
+        "maintenance": 10.0,
+        "runs_out_of_box": null,
+        "novelty": 6.5,
+        "license_safety": 10.0,
+        "fit": null,
+        "rationale": {
+          "traction": "35,000 stars over 1500d, 250 in the last 7d, 60 committers/30d",
+          "maintenance": "300 commits/30d, CI yes, release py-1.33.0, 583 open issues",
+          "license_safety": "MIT",
+          "novelty": "heuristic; compares itself to pandas, polars"
+        }
+      },
+      "claims": "Dataframes powered by a multithreaded, vectorized query engine, written in Rust.",
+      "why_scored": "traction: 35,000 stars over 1500d, 250 in the last 7d, 60 committers/30d; maintenance: 300 commits/30d, CI yes, release py-1.33.0, 583 open issues; license_safety: MIT; novelty: heuristic; compares itself to pandas, polars",
+      "test_summary": "pip install / clone pola-rs/polars, run the README quickstart, confirm one call succeeds.",
+      "test_snippet": "",
+      "verdict": "",
+      "label": "WATCHING",
+      "test": {
+        "passed": false,
+        "duration_s": 0.0,
+        "command": "(docker unavailable)",
+        "stdout_tail": "",
+        "script_path": "tested-daily/2026-09-21/pola-rs__polars/run.sh",
+        "notes": "Docker not available; test not run. Label cannot be ADOPTED."
+      }
+    },
+    {
+      "repo": {
+        "full_name": "browser-use/browser-use",
+        "url": "https://github.com/browser-use/browser-use",
+        "description": "Make websites accessible for AI agents.",
+        "stars": 70000,
+        "forks": 7000,
+        "stars_7d": 1200,
+        "created_at": "2025-11-25T03:58:38.184686+00:00",
+        "pushed_at": "2026-09-21T03:58:38.184686+00:00",
+        "commits_30d": 90,
+        "unique_committers_30d": 12,
+        "open_issues": 1166,
+        "license": "MIT",
+        "has_ci": true,
+        "latest_release": "0.7.2",
+        "language": "Python",
+        "readme": "# browser-use\nAgents that drive a real browser.",
+        "dependency_count": 12,
+        "mentioned_by": [],
+        "mention_count": 1
+      },
+      "score": {
+        "traction": 10.0,
+        "maintenance": 10.0,
+        "runs_out_of_box": null,
+        "novelty": 5.5,
+        "license_safety": 10.0,
+        "fit": null,
+        "rationale": {
+          "traction": "70,000 stars over 300d, 1200 in the last 7d, 12 committers/30d",
+          "maintenance": "90 commits/30d, CI yes, release 0.7.2, 1166 open issues",
+          "license_safety": "MIT",
+          "novelty": "heuristic"
+        }
+      },
+      "claims": "Make websites accessible for AI agents.",
+      "why_scored": "traction: 70,000 stars over 300d, 1200 in the last 7d, 12 committers/30d; maintenance: 90 commits/30d, CI yes, release 0.7.2, 1166 open issues; license_safety: MIT; novelty: heuristic",
+      "test_summary": "pip install / clone browser-use/browser-use, run the README quickstart, confirm one call succeeds.",
+      "test_snippet": "",
+      "verdict": "",
+      "label": "WATCHING",
+      "test": {
+        "passed": false,
+        "duration_s": 0.0,
+        "command": "(docker unavailable)",
+        "stdout_tail": "",
+        "script_path": "tested-daily/2026-09-21/browser-use__browser-use/run.sh",
+        "notes": "Docker not available; test not run. Label cannot be ADOPTED."
+      }
+    }
+  ]
+}

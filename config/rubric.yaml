@@ -1,0 +1,47 @@
+# Grading rubric — 6 signals, 10 points. Published verbatim on the Substack About page.
+# The AI fills the first five from GitHub data and the README; Tyler fills "fit" after the test run.
+publication:
+  name: "Top 3 Repos"
+  author: "Tyler Reynolds"
+  handle: "hoodlem4real"
+  subdomain: "top3repos"
+  repo_url: "https://github.com/treycsa/tylers-substack/blob/main/"   # where test receipts live; change owner if different
+  timezone: "America/Los_Angeles"
+  publish_hour_local: 6
+
+selection:
+  candidates_to_score: 10     # AI scores this many after dedupe
+  candidates_to_test: 5       # Tyler runs the quickstart on this many
+  picks: 3                    # published per issue
+  dedupe_window_days: 30      # a repo scored in this window is skipped unless it shipped a major release
+  min_stars_without_override: 50
+  fail_install_cap: 6.0       # a repo that fails "runs out of the box" cannot score above this
+
+signals:
+  traction:
+    weight: 2.0
+    description: "Stars gained in the last 7 days vs. repo age; forks; unique committers"
+  maintenance:
+    weight: 1.5
+    description: "Commits in last 30 days, open-issue response time, CI passing, releases tagged"
+  runs_out_of_box:
+    weight: 2.0
+    description: "Install + quickstart succeeds in a clean container within 10 minutes"
+  novelty:
+    weight: 1.5
+    description: "Does something the obvious incumbent (LangChain / LiteLLM / etc.) does not"
+  license_safety:
+    weight: 1.0
+    description: "OSI license, no telemetry surprises, no secrets in history, sane dependency count"
+  fit:
+    weight: 2.0
+    description: "Would it survive in a real production codebase (AlgoChains services or comparable)"
+
+labels:
+  - ADOPTED
+  - "TRIED, NOT ADOPTED"
+  - WATCHING
+
+test:
+  timeout_seconds: 600
+  docker_image: "python:3.11-slim"

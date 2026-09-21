@@ -1,0 +1,8 @@
+{
+  "passed": false,
+  "duration_s": 0.0,
+  "command": "(docker unavailable)",
+  "stdout_tail": "",
+  "script_path": "tested-daily/2026-09-21/browser-use__browser-use/run.sh",
+  "notes": "Docker not available; test not run. Label cannot be ADOPTED."
+}

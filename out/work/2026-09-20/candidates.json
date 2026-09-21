@@ -1,0 +1,34 @@
+{
+  "scanned_posts": 5,
+  "candidates": [
+    {
+      "full_name": "astral-sh/uv",
+      "mentions": 2,
+      "sources": [
+        "https://www.linkedin.com/posts/sample-2",
+        "https://www.linkedin.com/posts/sample-4"
+      ]
+    },
+    {
+      "full_name": "BerriAI/litellm",
+      "mentions": 1,
+      "sources": [
+        "https://www.linkedin.com/posts/sample-1"
+      ]
+    },
+    {
+      "full_name": "browser-use/browser-use",
+      "mentions": 1,
+      "sources": [
+        "https://www.linkedin.com/posts/sample-3"
+      ]
+    },
+    {
+      "full_name": "pola-rs/polars",
+      "mentions": 1,
+      "sources": [
+        "https://www.linkedin.com/posts/sample-5"
+      ]
+    }
+  ]
+}

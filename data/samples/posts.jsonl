@@ -1,0 +1,5 @@
+{"url": "https://www.linkedin.com/posts/sample-1", "author": "A. Builder", "date": "2026-09-19", "text": "This changes everything for LLM routing: https://github.com/BerriAI/litellm - one interface for 100+ providers"}
+{"url": "https://www.linkedin.com/posts/sample-2", "author": "B. Engineer", "date": "2026-09-19", "text": "Been using https://github.com/astral-sh/uv for a month. 10-100x faster than pip. Not going back."}
+{"url": "https://www.linkedin.com/posts/sample-3", "author": "C. Founder", "date": "2026-09-19", "text": "Agents that actually work: github.com/browser-use/browser-use (see also https://github.com/features/copilot)"}
+{"url": "https://www.linkedin.com/posts/sample-4", "author": "D. Dev", "date": "2026-09-18", "text": "uv again -> https://github.com/astral-sh/uv.git it's the default now"}
+{"url": "https://www.linkedin.com/posts/sample-5", "author": "E. Quant", "date": "2026-09-18", "text": "Fast dataframes for backtests: https://github.com/pola-rs/polars/tree/main/py-polars"}

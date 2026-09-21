@@ -1,0 +1,40 @@
+# Nightly loop: scan -> enrich -> score at 11 PM Pacific, commit the work files so the 6 AM
+# review window starts with everything ready. The human step (review) and build/publish run locally.
+name: nightly-scan-score
+
+on:
+  schedule:
+    - cron: "0 6 * * *"   # 06:00 UTC = 11 PM PDT / 10 PM PST
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  nightly:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install -e ".[ai]"
+      # Your scraper's output must be present. Either commit data/posts.jsonl from a separate job,
+      # or download it here from wherever the scraper writes (S3, a gist, your own server).
+      - name: Scan, enrich, score
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          POSTS_PATH: data/posts.jsonl
+        run: |
+          DAY=$(TZ=America/Los_Angeles date -d tomorrow +%F)
+          substack --date "$DAY" scan
+          substack --date "$DAY" enrich
+          substack --date "$DAY" score
+      - name: Commit work files
+        run: |
+          git config user.name "nightly-bot"
+          git config user.email "nightly-bot@users.noreply.github.com"
+          git add out/work data/pipeline.sqlite || true
+          git commit -m "nightly: scan+score $(date -u +%F)" || echo "nothing to commit"
+          git push
