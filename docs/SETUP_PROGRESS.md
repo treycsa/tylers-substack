@@ -1,6 +1,6 @@
 # Substack setup checklist (from blueprint, 2026-09-20)
 
-- [ ] Create publication "Top 3 Repos" — BLOCKED: Start publishing flow requires Tyler to accept Substack Terms himself
+- [ ] Create publication "Top 3 Repos" — BLOCKED: Start publishing flow requires the owner to accept Substack Terms directly
 - [~] Handle: KEEP @hoodlem4real (owner decision 2026-09-20); display name Tyler Reynolds already set
 - [x] Profile bio set to blueprint text (2026-09-20) | [ ] One-line description + About page (rubric, test-case rule, adopt rule, AI disclosure)
 - [ ] "How I make this" statement
