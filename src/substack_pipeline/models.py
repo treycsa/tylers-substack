@@ -102,6 +102,8 @@ class Issue:
     reviews: list[Review]
     adopted_this_week: tuple[int, int] = (0, 0)
     totals: dict[str, float] = field(default_factory=dict)  # repo full_name -> weighted total
+    source: str = "posts"     # "github" | "posts" | "both" — where the candidates came from
+    scanned_label: str = ""   # human line for the header, e.g. "42 repos surfaced across GitHub trending + new-repo search"
 
     @property
     def top_score(self) -> float:

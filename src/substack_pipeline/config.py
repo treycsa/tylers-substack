@@ -22,6 +22,8 @@ class Settings:
     db_path: Path
     out_dir: Path
     tested_dir: Path
+    substack_cookies: str | None = None       # Cookie header for `publish --api`; never logged
+    substack_cookies_path: str | None = None  # or a JSON cookie file (python-substack's format)
     root: Path = field(default=ROOT)
 
     @property
@@ -35,6 +37,19 @@ class Settings:
     @property
     def labels(self) -> list[str]:
         return list(self.rubric["labels"])
+
+    @property
+    def discover(self) -> dict:
+        """GitHub-native discovery config: `feeds` (RSS URLs) and `search` (days_back, min_stars, languages)."""
+        d = self.rubric.get("discover") or {}
+        search = {**DEFAULT_DISCOVER["search"], **(d.get("search") or {})}
+        return {"feeds": list(d.get("feeds") or DEFAULT_DISCOVER["feeds"]), "search": search}
+
+
+DEFAULT_DISCOVER = {
+    "feeds": ["https://mshibanami.github.io/GitHubTrendingRSS/daily/all.xml"],
+    "search": {"days_back": 7, "min_stars": 50, "languages": []},
+}
 
 
 def load_settings(rubric_path: Path | None = None) -> Settings:
@@ -56,4 +71,6 @@ def load_settings(rubric_path: Path | None = None) -> Settings:
         db_path=p("DB_PATH", "data/pipeline.sqlite"),
         out_dir=p("OUT_DIR", "out"),
         tested_dir=p("TESTED_DIR", "tested-daily"),
+        substack_cookies=os.getenv("SUBSTACK_COOKIES") or None,
+        substack_cookies_path=os.getenv("SUBSTACK_COOKIES_PATH") or None,
     )

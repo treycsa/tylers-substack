@@ -24,10 +24,9 @@ class GitHub:
     def _get(self, path: str, **params):
         for attempt in range(3):
             r = self.s.get(f"{API}{path}", params=params, timeout=30)
-            if r.status_code == 403 and "rate limit" in r.text.lower():
-                reset = int(r.headers.get("X-RateLimit-Reset", time.time() + 60))
-                wait = max(1, reset - int(time.time()))
-                log.warning("rate limited; sleeping %ss", wait)
+            if self._rate_limited(r):
+                wait = self._retry_after(r)
+                log.warning("rate limited (%s); sleeping %ss", r.status_code, wait)
                 time.sleep(min(wait, 120))
                 continue
             if r.status_code == 404:
@@ -35,6 +34,27 @@ class GitHub:
             r.raise_for_status()
             return r.json()
         return None
+
+    @staticmethod
+    def _rate_limited(r) -> bool:
+        """429 (primary + secondary limits nowadays) or the older 403 rate-limit shape."""
+        if r.status_code == 429:
+            return True
+        return r.status_code == 403 and ("Retry-After" in r.headers or "rate limit" in r.text.lower())
+
+    @staticmethod
+    def _retry_after(r) -> int:
+        """Seconds to wait: Retry-After when present, else until X-RateLimit-Reset, else 60."""
+        ra = r.headers.get("Retry-After")
+        if ra and str(ra).isdigit():
+            return max(1, int(ra))
+        reset = int(r.headers.get("X-RateLimit-Reset", time.time() + 60))
+        return max(1, reset - int(time.time()))
+
+    def search_repos(self, q: str, per_page: int = 50, sort: str = "stars", order: str = "desc") -> list[dict]:
+        """GET /search/repositories; returns the raw `items` list (empty on 404 / rate-limit exhaustion)."""
+        d = self._get("/search/repositories", q=q, per_page=per_page, sort=sort, order=order)
+        return list((d or {}).get("items", []))
 
     def repo(self, full_name: str) -> Repo | None:
         d = self._get(f"/repos/{full_name}")

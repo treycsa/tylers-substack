@@ -5,3 +5,5 @@ __pycache__/
 data/posts.jsonl
 data/pipeline.sqlite
 .venv/
+cookies.json
+*cookies*.json

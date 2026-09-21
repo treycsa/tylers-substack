@@ -1,7 +1,7 @@
 [project]
 name = "substack-pipeline"
 version = "0.1.0"
-description = "Daily Top-3 GitHub repo review pipeline for Tyler's Substack: ingest LinkedIn posts, enrich, score, test, review, publish."
+description = "Daily Top-3 GitHub repo review pipeline for Tyler's Substack: discover on GitHub, enrich, score, test, review, publish."
 requires-python = ">=3.10"
 dependencies = [
     "requests>=2.31",
@@ -11,6 +11,7 @@ dependencies = [
 
 [project.optional-dependencies]
 ai = ["anthropic>=0.40"]
+publish = ["python-substack>=0.7"]   # `substack publish --api` (cookie auth)
 dev = ["pytest>=8.0"]
 
 [project.scripts]

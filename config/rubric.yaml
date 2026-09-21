@@ -4,10 +4,23 @@ publication:
   name: "Top 3 Repos"
   author: "Tyler Reynolds"
   handle: "hoodlem4real"
-  subdomain: "top3repos"
+  subdomain: "hoodlem4real"
+  url: "https://hoodlem4real.substack.com"
+  section: "Top 3 Repos"      # Substack section the daily issue is filed under (others: "Deep Dives", "Adopted")
   repo_url: "https://github.com/treycsa/tylers-substack/blob/main/"   # where test receipts live; change owner if different
   timezone: "America/Los_Angeles"
   publish_hour_local: 6
+
+# Where candidates come from. No LinkedIn: hosted trending feeds + the GitHub Search API only.
+discover:
+  feeds:   # GitHubTrendingRSS (github.com/mshibanami/GitHubTrendingRSS); pattern .../daily/<language>.xml
+    - "https://mshibanami.github.io/GitHubTrendingRSS/daily/all.xml"
+    - "https://mshibanami.github.io/GitHubTrendingRSS/daily/python.xml"
+    - "https://mshibanami.github.io/GitHubTrendingRSS/daily/typescript.xml"
+  search:  # GET /search/repositories q="created:>{today-days_back} stars:>={min_stars} [language:X]"
+    days_back: 7
+    min_stars: 50
+    languages: []   # empty = one unfiltered query; e.g. [python, typescript] = one query per language
 
 selection:
   candidates_to_score: 10     # AI scores this many after dedupe

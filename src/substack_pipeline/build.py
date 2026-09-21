@@ -52,11 +52,14 @@ def _review_block(i: int, r: Review, total: float, repo_url: str = REPO_URL) -> 
 def render_issue(issue: Issue, repo_url: str = REPO_URL) -> str:
     title, subtitle = _title(issue)
     adopted, reviewed = issue.adopted_this_week
+    scanned = f"{issue.scanned_posts} posts" if issue.source == "posts" else (issue.scanned_label or f"{issue.scanned_posts} repos surfaced")
+    how = ("every repo that hits my LinkedIn feed" if issue.source == "posts"
+           else "every repo surfaced by GitHub trending and new-repo search")
     head = [
         f"# {title}",
         f"_{subtitle}_",
         "",
-        f"**Scanned:** {issue.scanned_posts} posts · {issue.unique_repos} unique repos · "
+        f"**Scanned:** {scanned} · {issue.unique_repos} unique repos · "
         f"top score {issue.top_score}/10 · {sum(1 for r in issue.reviews if r.label == 'ADOPTED')} adopted",
         "",
         "---",
@@ -68,7 +71,7 @@ def render_issue(issue: Issue, repo_url: str = REPO_URL) -> str:
         f"**Adopted this week:** {adopted} of {reviewed} · running log → /adopted",
         "**Reply and tell me:** which of these would you actually put in prod?",
         "",
-        "_How I make this: an AI scores every repo that hits my LinkedIn feed on a public rubric and drafts "
+        f"_How I make this: an AI scores {how} on a public rubric and drafts "
         "the claim and score lines. I run the test, write the verdict, and set the label._",
     ]
     return "\n".join(head + body + tail)

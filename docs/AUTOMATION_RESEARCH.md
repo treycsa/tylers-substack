@@ -27,18 +27,30 @@ Stars and last-push dates were pulled from the GitHub API on 2026-09-20.
 - All Substack write APIs are unofficial and cookie-based; they can break without notice. Keep `publish_browser` (Playwright) as the fallback.
 - Stage 4 runs untrusted code. That is the biggest risk in the pipeline, bigger than either ToS issue.
 
-## How to wire python-substack into `publish.py`
+## How python-substack is wired into `publish.py` (done 2026-09-20)
 
-Add a third sibling with the same signature as `publish_manual` / `publish_browser`:
+`publish.publish_api(post_path, title, subtitle, publication_url, cookies_string=None, cookies_path=None,
+section_name=None, schedule_at=None) -> str` is the third sibling of `publish_manual` / `publish_browser`.
+Verified against python-substack 0.7.0's source, not its README:
 
-```python
-def publish_api(post_path, handle, title, subtitle, schedule_at=None):
-    from substack import Api  # cookie auth via env
-    api = Api(cookies_path=...)
-    draft = api.create_draft_from_markdown(post_path.read_text(), title=title, subtitle=subtitle)
-    if schedule_at:
-        api.drafts.schedule(draft["id"], schedule_at)
-    return draft_url
-```
+- `substack.Api(cookies_string=..., cookies_path=..., publication_url="https://hoodlem4real.substack.com")`.
+  Cookie auth only; email/password is never passed. `publication_url` is matched by hostname against the
+  account's publications, and the lib derives `<pub>/api/v1` for draft calls.
+- Section: `api.get_sections()` returns the section dicts of the current publication; we match `name`
+  case-insensitively to `publication.section` from `rubric.yaml` ("Top 3 Repos") and pass the id as
+  `draft_section_id`. Unknown section = warning + draft without a section.
+- Body: `strip_header()` removes the `# title` / `_subtitle_` lines that `build.render_issue` writes, since
+  `create_draft_from_markdown(title, markdown, subtitle=..., draft_section_id=...)` takes them separately.
+- Schedule: `api.schedule_draft(id, when_utc)` posts `{"trigger_at": <iso>}` to `drafts/<id>/scheduled_release`
+  (the field name the reference confirms; the lib omits `post_audience`, which defaults to everyone).
+  `next_publish_time(now, hour, tz)` picks the slot: today at `hour`:00 if still ahead, else now + 10 min.
+- `publish_draft` is never called. The draft URL is `<publication_url>/publish/post/<id>`.
 
-Stop at *scheduled*, never *published*, so there is always a last look. Wire `--api` into the CLI flag switch next to `--browser`.
+CLI: `substack publish --api` (draft only), `--schedule`, `--at YYYY-MM-DDTHH:MM`, `--section NAME`;
+`scripts/morning.sh` runs `publish --api --schedule` when `SUBSTACK_COOKIES`/`_PATH` is set in `.env`.
+
+Notes: `publish.post_note(text, cookies_string=...)` posts to `https://substack.com/api/v1/comment/feed`
+with `{"bodyJson": <ProseMirror doc>, "replyMinimumRole": "everyone"}`, the ✅-verified shape in
+substack-api-reference's `ENDPOINTS.md` and `openapi.yaml` (`NoteCreate`). It is a plain `requests.Session`
+with the same cookies (the lib's `api.call()` targets the publication host with query params, not a JSON
+body on substack.com). Not yet on a CLI flag.

@@ -19,16 +19,14 @@ jobs:
         with:
           python-version: "3.11"
       - run: pip install -e ".[ai]"
-      # Your scraper's output must be present. Either commit data/posts.jsonl from a separate job,
-      # or download it here from wherever the scraper writes (S3, a gist, your own server).
+      # Discovery is GitHub-native (trending RSS + search API); nothing external needs to be present.
       - name: Scan, enrich, score
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-          POSTS_PATH: data/posts.jsonl
         run: |
           DAY=$(TZ=America/Los_Angeles date -d tomorrow +%F)
-          substack --date "$DAY" scan
+          substack --date "$DAY" scan --source github
           substack --date "$DAY" enrich
           substack --date "$DAY" score
       - name: Commit work files
