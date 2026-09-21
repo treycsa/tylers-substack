@@ -9,6 +9,7 @@ git pull --quiet || true
 substack --date "$DAY" test
 substack --date "$DAY" review
 substack --date "$DAY" build
+substack lint "out/$DAY-issue.md"   # blocks machine-prose tells; fix the file, re-run, then publish
 # .env is never sourced here (the CLI loads it via python-dotenv): an unquoted cookie value would make bash
 # execute part of it and echo the secret. A read-only presence check is all this script needs.
 if grep -Eq '^(SUBSTACK_COOKIES|SUBSTACK_COOKIES_PATH)=.+' .env 2>/dev/null; then

@@ -11,10 +11,10 @@ from .review import snippet_from_script
 def _title(issue: Issue) -> tuple[str, str]:
     d = date.fromisoformat(issue.date).strftime("%b %-d")
     if not issue.reviews:
-        return f"Top 3 Repos — {d}: nothing cleared the bar", "Quiet day. Here's what came close."
+        return f"Top 3 Repos, {d}: nothing cleared the bar", "Quiet day. Here's what came close."
     win = issue.reviews[0]
     runner = issue.reviews[1].repo.full_name.split("/")[1] if len(issue.reviews) > 1 else "the field"
-    title = f"Top 3 Repos — {d}: {win.repo.full_name.split('/')[1]} and why it beat {runner}"
+    title = f"Top 3 Repos, {d}: {win.repo.full_name.split('/')[1]} and why it beat {runner}"
     subtitle = f"{issue.totals[win.repo.full_name]}/10 · {win.label}. {win.verdict}".strip()
     return title, subtitle[:200]
 
@@ -27,13 +27,13 @@ def _review_block(i: int, r: Review, total: float, repo_url: str = REPO_URL) -> 
     test_line = ""
     if t and t.command != "(docker unavailable)":
         mins = max(1, round(t.duration_s / 60))
-        test_line = f"**The test ({mins} min):** {'passed' if t.passed else 'FAILED'} — {r.test_summary}"
+        test_line = f"**The test ({mins} min):** {'passed' if t.passed else 'failed'}. {r.test_summary}"
     else:
-        test_line = f"**The test:** not run today — {r.test_summary}"
+        test_line = f"**The test:** not run today. {r.test_summary}"
     lang = "bash" if not r.test_snippet or r.test_snippet.startswith(("git ", "pip ", "curl ", "npm ")) else "python"
     receipt = f" ([receipt]({repo_url}{r.test.script_path}))" if t and t.script_path else ""
     return "\n".join([
-        f"## {i}. {r.repo.full_name.split('/')[1]} — {total}/10 · {r.label}",
+        f"## {i}. {r.repo.full_name.split('/')[1]}: {total}/10 · {r.label}",
         f"[{r.repo.full_name}]({r.repo.url}) · {r.repo.stars:,} stars · {r.repo.license or 'no license'}",
         "",
         f"**What it claims:** {r.claims}",
@@ -44,7 +44,7 @@ def _review_block(i: int, r: Review, total: float, repo_url: str = REPO_URL) -> 
         snippet_from_script(r),
         "```",
         "",
-        f"**Verdict:** {r.verdict or '—'}",
+        f"**Verdict:** {r.verdict or 'no verdict yet.'}",
         "",
     ])
 
@@ -97,7 +97,7 @@ def render_notes(issue: Issue) -> list[str]:
         notes.append(f"Everyone's posting {low.repo.full_name.split('/')[1]}. I ran it: "
                      f"{issue.totals[low.repo.full_name]}/10, {low.label}. Hype in the post never moves the score.")
     notes.append(f"Which of today's three would you actually put in prod? "
-                 f"{', '.join(r.repo.full_name.split('/')[1] for r in issue.reviews)} — reply with one.")
+                 f"{', '.join(r.repo.full_name.split('/')[1] for r in issue.reviews)}. Reply with one.")
     return notes
 
 

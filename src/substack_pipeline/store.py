@@ -57,12 +57,16 @@ class Store:
         self.conn.commit()
 
     def record_adopted(self, issue_date: str, full_name: str, label: str, total: float, verdict: str) -> None:
-        new = not self.adopted_csv.exists()
-        with open(self.adopted_csv, "a", newline="") as f:
-            w = csv.writer(f)
-            if new:
-                w.writerow(["date", "repo", "label", "score", "verdict"])
-            w.writerow([issue_date, full_name, label, total, verdict])
+        """Upsert on (date, repo): rebuilding an issue must not duplicate its rows in the ledger."""
+        rows: list[dict] = []
+        if self.adopted_csv.exists():
+            with open(self.adopted_csv, newline="") as f:
+                rows = [r for r in csv.DictReader(f) if not (r["date"] == issue_date and r["repo"] == full_name)]
+        rows.append({"date": issue_date, "repo": full_name, "label": label, "score": total, "verdict": verdict})
+        with open(self.adopted_csv, "w", newline="") as f:
+            w = csv.DictWriter(f, fieldnames=["date", "repo", "label", "score", "verdict"])
+            w.writeheader()
+            w.writerows(rows)
 
     def adopted_this_week(self, as_of: date | None = None) -> tuple[int, int]:
         """(adopted, reviewed) over the trailing 7 days, computed from adopted.csv, never hand-typed."""

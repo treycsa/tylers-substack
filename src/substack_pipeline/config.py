@@ -43,12 +43,15 @@ class Settings:
         """GitHub-native discovery config: `feeds` (RSS URLs) and `search` (days_back, min_stars, languages)."""
         d = self.rubric.get("discover") or {}
         search = {**DEFAULT_DISCOVER["search"], **(d.get("search") or {})}
-        return {"feeds": list(d.get("feeds") or DEFAULT_DISCOVER["feeds"]), "search": search}
+        linkedin = {**DEFAULT_DISCOVER["linkedin"], **(d.get("linkedin") or {})}
+        return {"feeds": list(d.get("feeds") or DEFAULT_DISCOVER["feeds"]), "search": search, "linkedin": linkedin}
 
 
 DEFAULT_DISCOVER = {
     "feeds": ["https://mshibanami.github.io/GitHubTrendingRSS/daily/all.xml"],
     "search": {"days_back": 7, "min_stars": 50, "languages": []},
+    # optional owner-session LinkedIn pass (`substack linkedin-scan`); see linkedin_feed.py for the ToS note
+    "linkedin": {"mode": "search", "query": "github.com", "date_posted": "past-24h", "scrolls": 8},
 }
 
 

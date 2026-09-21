@@ -9,6 +9,7 @@ from __future__ import annotations
 import json
 import logging
 import math
+import re
 
 from .models import Repo, Review, Score
 
@@ -81,23 +82,49 @@ def score_novelty_heuristic(repo: Repo) -> tuple[float, str]:
     return _clamp(s), ("heuristic; compares itself to " + ", ".join(named)) if named else "heuristic"
 
 
+MARKETING = re.compile(r"\b(blazingly|blazing|powerful|seamless(?:ly)?|revolutionary|game[- ]changing|cutting[- ]edge|"
+                       r"next[- ]gen(?:eration)?|ultimate|supercharged?|robust|elegant|effortless(?:ly)?|"
+                       r"lightning[- ]fast|state[- ]of[- ]the[- ]art)\b[,]?\s*", re.I)
+
+
+def plain_claim(text: str, limit: int = 160) -> str:
+    """The repo's own description with the marketing adjectives removed, sentence-cased, one line."""
+    s = MARKETING.sub("", text or "").strip().strip("# ").strip()
+    s = re.sub(r"\s+", " ", s).replace(" ,", ",").strip(" ,")
+    s = re.sub(r"[—–]", ", ", s)  # no dashes in generated prose (see docs/WRITING_VOICE.md)
+    s = s[:1].upper() + s[1:] if s else s
+    return s[:limit]
+
+
 def draft_heuristic(repo: Repo) -> dict[str, str]:
-    first = (repo.description or repo.readme.strip().splitlines()[0] if repo.readme.strip() else "").strip("# ").strip()
+    first = repo.description or (repo.readme.strip().splitlines()[0] if repo.readme.strip() else "")
     return {
-        "claims": first[:160] or "(no description)",
+        "claims": plain_claim(first) or "(no description)",
         "novelty_rationale": "",
-        "test_idea": f"pip install / clone {repo.full_name}, run the README quickstart, confirm one call succeeds.",
+        "test_idea": f"`git clone {repo.url}` and run the README quickstart; confirm one call succeeds.",
     }
 
 
-SYSTEM_PROMPT = """You grade GitHub repositories for a daily newsletter read by builders and AI engineers.
+SYSTEM_PROMPT = """You draft the fact lines for a daily review of GitHub repos read by builders and AI engineers.
+Write like an engineer messaging a colleague who will run the command next. Use only facts in the input
+(README, description, stars, license). Never invent a number, command, benchmark, name, or result.
+
 Score NOVELTY on 0-10: does this repo do something the obvious incumbent (LangChain, LiteLLM, vLLM,
-FastAPI, Airflow, etc.) does not, or do it materially better? A thin wrapper or re-implementation scores 2-4;
-a clear new capability with evidence scores 7-9. Ignore hype in the description; use the README.
+FastAPI, Airflow, etc.) does not, or do it measurably better? A thin wrapper or re-implementation scores 2-4;
+a clear new capability with evidence in the README scores 7-9. Ignore hype in the description.
+
 Also write:
-- claims: one sentence, <= 25 words, what the repo says it does (no marketing adjectives)
-- novelty_rationale: one sentence citing the specific feature or benchmark that justifies the score
-- test_idea: one concrete 2-minute test a reader could run to verify the main claim (a command or <= 10 lines)
+- claims: one sentence, at most 25 words, the repo's own claim in plain words. No adjectives like fast,
+  powerful, seamless, robust, blazing, cutting-edge, game-changing. Say what it does and what it replaces.
+- novelty_rationale: one sentence naming the specific feature, benchmark, or README section that justifies
+  the score. Say "README says" for claims you could not verify.
+- test_idea: the exact command (or at most 10 lines) a reader runs in 2 minutes to check the main claim,
+  in backticks, with the number they should see if the README states one.
+
+Style rules, all of them: plain verbs (is, has, runs, took, failed); contractions are fine; sentence case;
+no em or en dashes; no bold, emoji, exclamation marks, or rhetorical questions; no "not X but Y"; no
+delve, robust, seamless, leverage, landscape, game-changer, groundbreaking, pivotal, crucial, showcase,
+underscore, "it's worth noting", "in summary", "overall", "ultimately", "significantly" without a number.
 Return JSON only: {"novelty": <float>, "claims": "...", "novelty_rationale": "...", "test_idea": "..."}"""
 
 

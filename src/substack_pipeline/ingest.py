@@ -60,7 +60,7 @@ def read_posts(path: Path) -> list[Post]:
                 continue
             text = _get(d, "text", "content", "commentary", "body")
             url = _get(d, "url", "post_url", "link", "postUrl")
-            links = extract_repo_links(text) or extract_repo_links(" ".join(map(str, d.get("links", []) or [])))
+            links = extract_repo_links(" ".join([text, *map(str, d.get("links", []) or [])]))  # text + resolved links
             posts.append(Post(
                 url=url,
                 author=_get(d, "author", "author_name", "authorName", "name"),

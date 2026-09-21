@@ -31,10 +31,38 @@ one; `--source both` merges the two. Post text is never published — only the r
 | When | Command | Who | Output |
 | --- | --- | --- | --- |
 | 11 PM (GitHub Actions) | `substack scan` → `enrich` → `score` | cron | `out/work/<date>/scored.json` |
-| 6:00 AM | `scripts/morning.sh` = `test` → `review` → `build` → `publish` | Tyler, ~45 min | `out/<date>-issue.md`, `out/<date>-notes.md`, `tested-daily/<date>/…/run.sh` |
+| 6:00 AM | `scripts/morning.sh` = `test` → `review` → `build` → `lint` → `publish` | Tyler, ~45 min | `out/<date>-issue.md`, `out/<date>-notes.md`, `tested-daily/<date>/…/run.sh` |
 | Missed morning | `substack review --auto && substack build` | cron fallback | Issue ships with WATCHING labels, no ADOPTED claim |
 
 `substack leaderboard --days 30` prints the month's top 10 for the monthly leaderboard post.
+
+`substack lint out/<date>-issue.md` is the voice gate: it fails on the tells of machine-written prose (em
+dashes, "not X but Y", banned words, filler openers, hedge stacks, emoji, exclamation marks, a missing label
+or a missing one of the five lines). The rules and their sources are in [docs/WRITING_VOICE.md](docs/WRITING_VOICE.md);
+`morning.sh` refuses to publish until the file is clean. The drafting prompt in `scorer.py` follows the same rules.
+
+## LinkedIn discovery (optional)
+
+`substack linkedin-scan` reads the owner's **own logged-in LinkedIn session** and writes posts that link to
+GitHub repos into `POSTS_PATH`, so `substack scan --source both` merges them with GitHub trending. Default mode
+is LinkedIn's content search for `github.com`, newest first, past 24 hours (about 25 posts per 8 scrolls, half
+of them with a repo); `--mode feed` reads the home feed instead.
+
+It attaches over the Chrome DevTools Protocol to a Chrome you launched with remote debugging (in
+control-tower: `linkedin/launch_chrome_cdp.sh`, which starts a copy of your Chrome profile on port 9222).
+**One-time step:** log into LinkedIn in that Chrome window; the session persists. The scraper never reads
+cookies, passwords, or the profile, and it stops with a clear error if that window is not logged in.
+
+Cadence limits are built in: random 2 to 5 seconds between scrolls, hard cap of 30 scrolls, one pass per run.
+LinkedIn's User Agreement prohibits automated access; this only reads the account owner's own session at
+human speed, and the owner accepted that risk on 2026-09-20. GitHub trending is the default source and needs
+none of this. Post text is never published, only the repo link and the review.
+
+```bash
+bash ../algochains-control-tower/linkedin/launch_chrome_cdp.sh   # once per day, then log in if asked
+substack linkedin-scan                                            # -> data/posts.jsonl
+substack scan --source both && substack enrich && substack score
+```
 
 ## Rubric (`config/rubric.yaml`)
 
@@ -76,8 +104,9 @@ to a CLI flag yet — the 3 Notes in `out/<date>-notes.md` are still posted by h
 ## Layout
 
 ```
-src/substack_pipeline/   discover · ingest (legacy JSONL) · github_enrich · scorer · tester · review · build · publish · store · cli
-config/rubric.yaml       weights, selection rules, labels, publication settings, discover feeds + search
+src/substack_pipeline/   discover · linkedin_feed (optional) · ingest (JSONL) · github_enrich · scorer · tester · review · build · voice_gate · publish · store · cli
+config/rubric.yaml       weights, selection rules, labels, publication settings, discover feeds + search + linkedin
+docs/WRITING_VOICE.md    house style + the lint rules, with sources
 data/                    pipeline.sqlite · adopted.csv · samples/ · posts.jsonl (optional, git-ignored)
 tested-daily/            one folder per day per repo: run.sh + result.json
 out/                     <date>-issue.md, <date>-notes.md, work/<date>/*.json

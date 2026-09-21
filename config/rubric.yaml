@@ -21,6 +21,11 @@ discover:
     days_back: 7
     min_stars: 50
     languages: []   # empty = one unfiltered query; e.g. [python, typescript] = one query per language
+  linkedin:  # optional, owner's own logged-in session over CDP; see README "LinkedIn discovery"
+    mode: search          # search = content search for `query` (most repo posts); feed = home feed
+    query: "github.com"
+    date_posted: past-24h # or past-week
+    scrolls: 8            # human cadence; hard cap 30
 
 selection:
   candidates_to_score: 10     # AI scores this many after dedupe

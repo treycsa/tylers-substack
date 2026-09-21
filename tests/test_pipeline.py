@@ -83,13 +83,13 @@ def test_render_issue_and_notes_have_the_fixed_shape():
     totals = {r.repo.full_name: r.score.total(WEIGHTS) for r in (r1, r2)}
     issue = Issue(date="2026-09-21", scanned_posts=47, unique_repos=31, reviews=[r1, r2], adopted_this_week=(3, 15), totals=totals)
     md = render_issue(issue)
-    assert md.startswith("# Top 3 Repos — Sep 21: y and why it beat b")
+    assert md.startswith("# Top 3 Repos, Sep 21: y and why it beat b")
     assert "**Scanned:** 47 posts · 31 unique repos" in md
-    assert "## 1. y —" in md and "· ADOPTED" in md and "receipt" in md
+    assert "## 1. y:" in md and "· ADOPTED" in md and "receipt" in md
     assert "**Adopted this week:** 3 of 15" in md
     assert "How I make this" in md
     notes = render_notes(issue)
-    assert len(notes) == 3 and "reply with one" in notes[2]
+    assert len(notes) == 3 and "reply with one" in notes[2].lower()
 
 
 @pytest.mark.parametrize("bad", ["", "not json", '{"text": "no links here"}'])

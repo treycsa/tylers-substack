@@ -22,7 +22,9 @@ from pathlib import Path
 from zoneinfo import ZoneInfo
 
 from . import build as build_mod
+from . import linkedin_feed
 from . import publish as publish_mod
+from . import voice_gate
 from .config import Settings, load_settings
 from .discover import candidates_from_sightings, collect_sightings
 from .github_enrich import GitHub, enrich
@@ -225,6 +227,37 @@ def cmd_leaderboard(s: Settings, days: int) -> int:
     return 0
 
 
+def cmd_linkedin_scan(s: Settings, mode: str | None, query: str | None, date_posted: str | None,
+                      scrolls: int | None, cdp: str | None, out: str | None, resolve: bool) -> int:
+    """Owner's own LinkedIn session -> posts JSONL for `scan --source posts|both`. See README."""
+    cfg = s.discover["linkedin"]
+    try:
+        rows = linkedin_feed.scrape(mode=mode or cfg["mode"], query=query or cfg["query"],
+                                    date_posted=date_posted or cfg["date_posted"],
+                                    scrolls=scrolls if scrolls is not None else cfg["scrolls"],
+                                    cdp_url=cdp, resolve=resolve)
+    except RuntimeError as e:
+        print(e, file=sys.stderr)
+        return 1
+    path = Path(out) if out else s.posts_path
+    written = linkedin_feed.write_posts(rows, path)
+    with_repos = sum(1 for r in rows if any("github.com/" in l for l in r["links"]))
+    print(f"linkedin-scan: {len(rows)} posts, {with_repos} with repo links, {written} new written to {path}")
+    return 0
+
+
+def cmd_lint(s: Settings, day: str, path: str | None, profile: str) -> int:
+    target = Path(path) if path else s.out_dir / f"{day}-issue.md"
+    if not target.exists():
+        print(f"lint: {target} not found", file=sys.stderr)
+        return 1
+    findings = voice_gate.lint_file(target, profile)
+    for f in findings:
+        print(f"{target.name}: {f}")
+    print(f"lint: {len(findings)} finding(s) in {target}" + ("" if findings else " (clean)"))
+    return 1 if findings else 0
+
+
 def main(argv: list[str] | None = None) -> int:
     ap = argparse.ArgumentParser(prog="substack", description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--date", default=date.today().isoformat(), help="issue date, YYYY-MM-DD")
@@ -251,6 +284,17 @@ def main(argv: list[str] | None = None) -> int:
     d.add_argument("--api", action="store_true", help="with --publish: draft via the API instead of the clipboard")
     d.add_argument("--source", **source_kw)
     sub.add_parser("leaderboard").add_argument("--days", type=int, default=30)
+    li = sub.add_parser("linkedin-scan", help="owner's own LinkedIn session (CDP Chrome) -> posts JSONL")
+    li.add_argument("--mode", choices=("search", "feed"), help="default: rubric discover.linkedin.mode")
+    li.add_argument("--query", help='content-search keyword (default "github.com")')
+    li.add_argument("--date-posted", choices=("past-24h", "past-week"), dest="date_posted")
+    li.add_argument("--scrolls", type=int, help="page scrolls at human cadence (cap 30)")
+    li.add_argument("--cdp", metavar="URL", help="Chrome remote-debugging URL (default LINKEDIN_CDP_URL or http://127.0.0.1:9222)")
+    li.add_argument("--out", metavar="PATH", help="JSONL to append to (default POSTS_PATH)")
+    li.add_argument("--no-resolve", action="store_true", help="keep lnkd.in short links unresolved")
+    ln = sub.add_parser("lint", help="voice gate: fail on machine-prose tells (see docs/WRITING_VOICE.md)")
+    ln.add_argument("path", nargs="?", help="default out/<date>-issue.md")
+    ln.add_argument("--profile", choices=("issue", "notes"), default="issue")
 
     for sp in sub.choices.values():  # accept `-v` after the subcommand too
         sp.add_argument("-v", "--verbose", action="store_true", default=argparse.SUPPRESS)
@@ -279,6 +323,10 @@ def main(argv: list[str] | None = None) -> int:
         return 0
     if a.cmd == "leaderboard":
         return cmd_leaderboard(s, a.days)
+    if a.cmd == "linkedin-scan":
+        return cmd_linkedin_scan(s, a.mode, a.query, a.date_posted, a.scrolls, a.cdp, a.out, not a.no_resolve)
+    if a.cmd == "lint":
+        return cmd_lint(s, day, a.path, a.profile)
     if a.cmd == "daily":
         if cmd_scan(s, day, a.source):
             return 1
