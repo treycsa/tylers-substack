@@ -1,14 +1,22 @@
-# Substack setup checklist (from blueprint, 2026-09-20)
+# Substack setup checklist (blueprint, 2026-09-20)
 
-- [ ] Create publication "Top 3 Repos" — BLOCKED: Start publishing flow requires the owner to accept Substack Terms directly
-- [~] Handle: KEEP @hoodlem4real (owner decision 2026-09-20); display name Tyler Reynolds already set
-- [x] Profile bio set to blueprint text (2026-09-20) | [ ] One-line description + About page (rubric, test-case rule, adopt rule, AI disclosure)
-- [ ] "How I make this" statement
-- [ ] Logo, cover image, matching avatar
-- [ ] Welcome email
-- [ ] Sections: Daily Top 3, Deep Dives, Adopted (web only)
-- [ ] Hero post pinned on homepage
-- [ ] Chat on for subscribers; comments for everyone
+Publication: https://hoodlem4real.substack.com (personal Substack; name follows profile = "Tyler Reynolds")
+
+- [x] Publication exists (hoodlem4real.substack.com)
+- [~] Name "Top 3 Repos": personal Substack has no separate name field; branded via section + post titles instead
+- [~] Handle: kept @hoodlem4real (owner decision)
+- [x] Profile bio = blueprint text
+- [x] Introduction (publication description)
+- [x] "How I make this" statement
+- [x] Categories: Technology / Business
+- [x] Theme: Custom
+- [x] Sections: Top 3 Repos (email on), Deep Dives (email on), Adopted (not auto-subscribed)
+- [x] Welcome email ("You're in: Top 3 Repos, every morning at 6 AM PT")
+- [x] Comments on (default); subscriber Chat enabled
+- [x] Hero post DRAFT (post 216679639) - NOT published, needs owner review; pin after publishing
+- [ ] Logo / wordmark / cover image
+- [ ] First real issue: run the pipeline on real data (needs GITHUB_TOKEN, posts.jsonl, Docker)
 - [ ] Subscribe to 25 builder/AI publications
-- [ ] LinkedIn + GitHub profile links
-- [ ] Schedule: 6:00 AM PT
+- [ ] LinkedIn + GitHub profile links (need LinkedIn URL)
+- [ ] Schedule posts for 6:00 AM PT
+- [ ] Decide: make GitHub repo public (the "How I make this" statement says test scripts are public)
