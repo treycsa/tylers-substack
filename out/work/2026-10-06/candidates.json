@@ -1,0 +1,625 @@
+{
+  "scanned_posts": 96,
+  "source": "github",
+  "scanned_label": "96 repos surfaced across GitHub trending + new-repo search",
+  "candidates": [
+    {
+      "full_name": "tester-army/e2e",
+      "mentions": 2,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/all.xml",
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/typescript.xml"
+      ]
+    },
+    {
+      "full_name": "earthtojake/text-to-cad",
+      "mentions": 2,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/all.xml",
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/python.xml"
+      ]
+    },
+    {
+      "full_name": "Panniantong/Agent-Reach",
+      "mentions": 2,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/all.xml",
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/python.xml"
+      ]
+    },
+    {
+      "full_name": "getsentry/sentry",
+      "mentions": 2,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/all.xml",
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/python.xml"
+      ]
+    },
+    {
+      "full_name": "calesthio/OpenMontage",
+      "mentions": 2,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/all.xml",
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/python.xml"
+      ]
+    },
+    {
+      "full_name": "pingdotgg/t3code",
+      "mentions": 2,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/all.xml",
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/typescript.xml"
+      ]
+    },
+    {
+      "full_name": "thedotmack/claude-mem",
+      "mentions": 2,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/all.xml",
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/typescript.xml"
+      ]
+    },
+    {
+      "full_name": "garrytan/gstack",
+      "mentions": 2,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/all.xml",
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/typescript.xml"
+      ]
+    },
+    {
+      "full_name": "OpenCut-app/OpenCut",
+      "mentions": 2,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/all.xml",
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/typescript.xml"
+      ]
+    },
+    {
+      "full_name": "pbakaus/impeccable",
+      "mentions": 1,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/all.xml"
+      ]
+    },
+    {
+      "full_name": "coreyhaines31/marketingskills",
+      "mentions": 1,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/all.xml"
+      ]
+    },
+    {
+      "full_name": "DietrichGebert/ponytail",
+      "mentions": 1,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/all.xml"
+      ]
+    },
+    {
+      "full_name": "caddyserver/caddy",
+      "mentions": 1,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/all.xml"
+      ]
+    },
+    {
+      "full_name": "michael-denyer/pstack-claude",
+      "mentions": 1,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/all.xml"
+      ]
+    },
+    {
+      "full_name": "addyosmani/agent-skills",
+      "mentions": 1,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/all.xml"
+      ]
+    },
+    {
+      "full_name": "antirez/ds4",
+      "mentions": 1,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/all.xml"
+      ]
+    },
+    {
+      "full_name": "wilbowes/EchoMuse",
+      "mentions": 1,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/python.xml"
+      ]
+    },
+    {
+      "full_name": "shy3130/tick-stock-panel",
+      "mentions": 1,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/python.xml"
+      ]
+    },
+    {
+      "full_name": "ifixai-ai/iFixAi",
+      "mentions": 1,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/python.xml"
+      ]
+    },
+    {
+      "full_name": "p-e-w/heretic",
+      "mentions": 1,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/python.xml"
+      ]
+    },
+    {
+      "full_name": "ok-oldking/ok-wuthering-waves",
+      "mentions": 1,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/python.xml"
+      ]
+    },
+    {
+      "full_name": "Free-TV/IPTV",
+      "mentions": 1,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/python.xml"
+      ]
+    },
+    {
+      "full_name": "kaifcodec/user-scanner",
+      "mentions": 1,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/python.xml"
+      ]
+    },
+    {
+      "full_name": "jamwithai/production-agentic-rag-course",
+      "mentions": 1,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/python.xml"
+      ]
+    },
+    {
+      "full_name": "experientiallabs/experiential",
+      "mentions": 1,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/python.xml"
+      ]
+    },
+    {
+      "full_name": "Bennettxai/FounderOS-DEMO",
+      "mentions": 1,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/typescript.xml"
+      ]
+    },
+    {
+      "full_name": "Effect-TS/effect",
+      "mentions": 1,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/typescript.xml"
+      ]
+    },
+    {
+      "full_name": "Mathieu2301/TradingView-API",
+      "mentions": 1,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/typescript.xml"
+      ]
+    },
+    {
+      "full_name": "hieunc229/mailflare",
+      "mentions": 1,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/typescript.xml"
+      ]
+    },
+    {
+      "full_name": "iptv-org/iptv",
+      "mentions": 1,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/typescript.xml"
+      ]
+    },
+    {
+      "full_name": "mksglu/context-mode",
+      "mentions": 1,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/typescript.xml"
+      ]
+    },
+    {
+      "full_name": "cloudflare/cloudflare-os",
+      "mentions": 1,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/typescript.xml"
+      ]
+    },
+    {
+      "full_name": "LuxAlgo/Vela",
+      "mentions": 1,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/typescript.xml"
+      ]
+    },
+    {
+      "full_name": "anthropics/claude-code",
+      "mentions": 1,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/typescript.xml"
+      ]
+    },
+    {
+      "full_name": "heygen-com/hyperframes",
+      "mentions": 1,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/typescript.xml"
+      ]
+    },
+    {
+      "full_name": "earendil-works/pi",
+      "mentions": 1,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/typescript.xml"
+      ]
+    },
+    {
+      "full_name": "mrifqidaffaaditya/WA-AKG",
+      "mentions": 1,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/typescript.xml"
+      ]
+    },
+    {
+      "full_name": "rehan-remade/universal-modder",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-09-29 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "storytold/photocraft",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-09-29 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "nanaism/yomiyasu",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-09-29 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "QingYunA/answer-me-with-html",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-09-29 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "kargulstudio/sales-crm",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-09-29 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "facebookincubator/muse-gadget-sdk",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-09-29 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "CAPCOM-TD-OSS/REDox",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-09-29 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "chasmlol/SkyCraft",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-09-29 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "Edwardxlai/easyread",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-09-29 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "deadinside28/bloodborne_pc",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-09-29 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "sganggs/Stronghold-Protocol",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-09-29 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "StayLameBro/backburner",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-09-29 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "storytold/filmcraft",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-09-29 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "oil-oil/oil-ui",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-09-29 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "lucasmarkes/hairline",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-09-29 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "ythx-101/live-panel-skill",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-09-29 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "rauchg/gdp-ts",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-09-29 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "Jakeschincariol/replica-skill",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-09-29 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "OpSafari/hypoarena",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-09-29 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "ZacharyZhang-NY/Ely-GPUI-Components",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-09-29 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "storytold/lightcraft",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-09-29 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "storytold/vectorcraft",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-09-29 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "storytold/printcraft",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-09-29 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "whirlchat/whirl",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-09-29 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "zzzz7788990213-ops/EvoVLM",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-09-29 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "elstongun/leviathan",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-09-29 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "Dingo-Shenanigans/ReSkate",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-09-29 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "storytold/effectcraft",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-09-29 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "blackbearreloaded/ProsperoEden",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-09-29 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "mdpsec/bug-bounty-hunting-prompts",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-09-29 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "gangmoonrotation/Discord-Quest-Completer",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-09-29 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "HectoTeacher56/Adobe-Substance-3d",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-09-29 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "SwimmerShield/Better-Discord",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-09-29 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "VarnishTrackPrize/ultra-Iso",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-09-29 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "lostparakeetmagnify/Adobe-Illustrator",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-09-29 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "CyclopsRogueSucceed/Discord-Nitro-Generator",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-09-29 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "Noblebroplain/Ads-Blocker",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-09-29 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "KazekagePyre/Adobe-Audition",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-09-29 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "pauseseamandart18/AnyDesk",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-09-29 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "CrewPotterRectify/Autodesk-Inventor",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-09-29 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "Gryphonpebastion/Total-Commander",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-09-29 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "Neutronrucurl/Adobe-Acrobat-Pro",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-09-29 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "ModernShahDefeat72/Discord-Server-Cloner",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-09-29 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "Minorthedisengage/Discord-Server-Raider",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-09-29 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "blendi-remade/agentcraft",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-09-29 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "allenv0/SCM",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-09-29 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "pengchujin/livecanvas",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-09-29 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "x4gpanell/SuperJinX",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-09-29 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "DozenTwelve/Papermorph",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-09-29 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "noahdunnagan/mcopt",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-09-29 stars:>=50"
+      ]
+    }
+  ]
+}
