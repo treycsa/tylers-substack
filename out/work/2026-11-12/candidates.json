@@ -1,0 +1,587 @@
+{
+  "scanned_posts": 88,
+  "source": "github",
+  "scanned_label": "88 repos surfaced across GitHub trending + new-repo search",
+  "candidates": [
+    {
+      "full_name": "meta/astryx",
+      "mentions": 2,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/all.xml",
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/typescript.xml"
+      ]
+    },
+    {
+      "full_name": "anthropics/skills",
+      "mentions": 2,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/all.xml",
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/python.xml"
+      ]
+    },
+    {
+      "full_name": "anthropics/claude-quickstarts",
+      "mentions": 2,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/all.xml",
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/python.xml"
+      ]
+    },
+    {
+      "full_name": "homeassistant-ai/ha-mcp",
+      "mentions": 2,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/all.xml",
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/python.xml"
+      ]
+    },
+    {
+      "full_name": "sherlock-project/sherlock",
+      "mentions": 2,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/all.xml",
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/python.xml"
+      ]
+    },
+    {
+      "full_name": "ranxianglei/billion-context",
+      "mentions": 2,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/all.xml",
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/typescript.xml"
+      ]
+    },
+    {
+      "full_name": "addyosmani/agent-skills",
+      "mentions": 1,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/all.xml"
+      ]
+    },
+    {
+      "full_name": "google-deepmind/mujoco",
+      "mentions": 1,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/all.xml"
+      ]
+    },
+    {
+      "full_name": "we-promise/sure",
+      "mentions": 1,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/all.xml"
+      ]
+    },
+    {
+      "full_name": "vercel-labs/agent-browser",
+      "mentions": 1,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/all.xml"
+      ]
+    },
+    {
+      "full_name": "tokio-rs/topcoat",
+      "mentions": 1,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/all.xml"
+      ]
+    },
+    {
+      "full_name": "mattpocock/skills",
+      "mentions": 1,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/all.xml"
+      ]
+    },
+    {
+      "full_name": "OpenBMB/VoxCPM",
+      "mentions": 1,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/python.xml"
+      ]
+    },
+    {
+      "full_name": "debpalash/VoiceStudio",
+      "mentions": 1,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/python.xml"
+      ]
+    },
+    {
+      "full_name": "ashishpatel26/500-AI-Agents-Projects",
+      "mentions": 1,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/python.xml"
+      ]
+    },
+    {
+      "full_name": "opensandbox-group/OpenSandbox",
+      "mentions": 1,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/python.xml"
+      ]
+    },
+    {
+      "full_name": "ZhuLinsen/daily_stock_analysis",
+      "mentions": 1,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/python.xml"
+      ]
+    },
+    {
+      "full_name": "elder-plinius/OBLITERATUS",
+      "mentions": 1,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/python.xml"
+      ]
+    },
+    {
+      "full_name": "rohitg00/ai-engineering-from-scratch",
+      "mentions": 1,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/python.xml"
+      ]
+    },
+    {
+      "full_name": "figma/mcp-server-guide",
+      "mentions": 1,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/python.xml"
+      ]
+    },
+    {
+      "full_name": "rlaope/oh-my-hermes",
+      "mentions": 1,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/python.xml"
+      ]
+    },
+    {
+      "full_name": "Imbad0202/academic-research-skills",
+      "mentions": 1,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/python.xml"
+      ]
+    },
+    {
+      "full_name": "milind-soni/OpenMausBot",
+      "mentions": 1,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/typescript.xml"
+      ]
+    },
+    {
+      "full_name": "garrytan/gbrain",
+      "mentions": 1,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/typescript.xml"
+      ]
+    },
+    {
+      "full_name": "every-app/open-seo",
+      "mentions": 1,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/typescript.xml"
+      ]
+    },
+    {
+      "full_name": "mantrakp04/ardia",
+      "mentions": 1,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/typescript.xml"
+      ]
+    },
+    {
+      "full_name": "WhiteTowerAI/ohmygame",
+      "mentions": 1,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/typescript.xml"
+      ]
+    },
+    {
+      "full_name": "backnotprop/plannotator",
+      "mentions": 1,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/typescript.xml"
+      ]
+    },
+    {
+      "full_name": "upscayl/upscayl",
+      "mentions": 1,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/typescript.xml"
+      ]
+    },
+    {
+      "full_name": "a-ghorbani/pocketpal-ai",
+      "mentions": 1,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/typescript.xml"
+      ]
+    },
+    {
+      "full_name": "fosrl/pangolin",
+      "mentions": 1,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/typescript.xml"
+      ]
+    },
+    {
+      "full_name": "google-labs-code/stitch-skills",
+      "mentions": 1,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/typescript.xml"
+      ]
+    },
+    {
+      "full_name": "huamidev/GestaltX",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-05 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "tangerineturtle1/NX2navi",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-05 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "jhaizhou-ops/S2Arm",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-05 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "JenkinWoo/sheeridVerify",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-05 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "DIYgod/pinky",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-05 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "Kianuni/Erosion-CN",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-05 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "mahmoudtawfik1998/secure-pdf-document-processor",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-05 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "hembramneeraj3-create/aida-64-extreme",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-05 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "abdulmannanmalik13-wq/adobe-substance-3d-studio",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-05 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "AleRibeiro44/archicad-desktop-setup",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-05 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "Somenicehispanic/ashampoo-winoptimizer-desktop",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-05 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "PHISHER420/autodesk-inventor-desktop-config",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-05 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "CodeSouvik/clion-standalone-enhancement",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-05 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "sajawal-12/cubase-studio-desktop",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-05 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "Arda313131882/aion-2-trainer-tool",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-05 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "ebtsamalhakmy-sketch/desktop-backup-suite",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-05 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "IsaiaR09/daemon-pro-desktop",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-05 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "tss878/delta-executor-toolkit",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-05 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "JasonCharb/directory-opus",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-05 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "kcgeekedup-hash/delta-force-trainer-tool",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-05 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "Elegantic/designcenter-nx-desktop",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-05 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "Vesuvio1/display-fusion",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-05 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "Sanidhya0510/dvd-creator-game-enhancement",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-05 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "RyoTheOne/dxo-photolab-10-config",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-05 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "flgomes/dxo-photolab-10-desktop",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-05 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "Luk177Master/easy-worship-desktop",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-05 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "groschen81-web/secure-desktop-installer",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-05 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "RolandoV3/metatrader-5-bot",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-05 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "dikshantghimire321-droid/kontakt-8-config",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-05 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "janitoff0/ninjatrader-bot",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-05 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "leanislizarzado/ibm-spss-desktop-suite",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-05 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "SirBonney/scrcpy-mirror-control",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-05 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "ayanprob/coreldraw-desktop-installer",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-05 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "SnehalSukale27/power-director",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-05 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "muddinenilakshmilalithaksh-create/sp-flash-tool",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-05 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "21041979/rufus-usb-formatter",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-05 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "ethangangasingh-crypto/musicmakerunlimited",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-05 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "woo20080623-cell/cinebench-desktop",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-05 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "rdeepak-wq121/quicken-deluxe-installer",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-05 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "shahnawaz0786/payday-3-enhancement-toolkit",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-05 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "SK-Dev666/rust-external-trainer-tool",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-05 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "bipro45/actual-multi-display-configurator",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-05 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "shayannazar84-hero/honkai-star-rail-companion-suite",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-05 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "ilsa99/microsoft-365-desktop",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-05 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "daiphu2708-crypto/melodyne-5-desktop-setup",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-05 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "farhatullah0006-art/rx-11-audio-editor-config",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-05 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "Eriazeri/on1-photo-raw-max-config",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-05 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "vishnu05-codes/ozone-12-advanced",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-05 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "manjushree-iyer/soundpad-audio-suite",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-05 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "Malik-825/sketchup-pro-desktop",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-05 stars:>=50"
+      ]
+    }
+  ]
+}
