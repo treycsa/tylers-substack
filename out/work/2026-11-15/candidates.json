@@ -1,0 +1,643 @@
+{
+  "scanned_posts": 96,
+  "source": "github",
+  "scanned_label": "96 repos surfaced across GitHub trending + new-repo search",
+  "candidates": [
+    {
+      "full_name": "GoogleChrome/modern-web-guidance-src",
+      "mentions": 2,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/all.xml",
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/typescript.xml"
+      ]
+    },
+    {
+      "full_name": "openai/codex-security",
+      "mentions": 2,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/all.xml",
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/typescript.xml"
+      ]
+    },
+    {
+      "full_name": "ZhuLinsen/daily_stock_analysis",
+      "mentions": 2,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/all.xml",
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/python.xml"
+      ]
+    },
+    {
+      "full_name": "backnotprop/plannotator",
+      "mentions": 2,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/all.xml",
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/typescript.xml"
+      ]
+    },
+    {
+      "full_name": "tradermonty/claude-trading-skills",
+      "mentions": 2,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/all.xml",
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/python.xml"
+      ]
+    },
+    {
+      "full_name": "ChromeDevTools/chrome-devtools-mcp",
+      "mentions": 2,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/all.xml",
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/typescript.xml"
+      ]
+    },
+    {
+      "full_name": "alibaba/open-code-review",
+      "mentions": 1,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/all.xml"
+      ]
+    },
+    {
+      "full_name": "we-promise/sure",
+      "mentions": 1,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/all.xml"
+      ]
+    },
+    {
+      "full_name": "louislam/uptime-kuma",
+      "mentions": 1,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/all.xml"
+      ]
+    },
+    {
+      "full_name": "block/buzz",
+      "mentions": 1,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/all.xml"
+      ]
+    },
+    {
+      "full_name": "tailscale/tailcat",
+      "mentions": 1,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/all.xml"
+      ]
+    },
+    {
+      "full_name": "Likely7/Veyra-NRVideo",
+      "mentions": 1,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/all.xml"
+      ]
+    },
+    {
+      "full_name": "Tencent-Hunyuan/Hy-MT2",
+      "mentions": 1,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/python.xml"
+      ]
+    },
+    {
+      "full_name": "davila7/claude-code-templates",
+      "mentions": 1,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/python.xml"
+      ]
+    },
+    {
+      "full_name": "avenoxai/avenoxbeyin",
+      "mentions": 1,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/python.xml"
+      ]
+    },
+    {
+      "full_name": "asgeirtj/system_prompts_leaks",
+      "mentions": 1,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/python.xml"
+      ]
+    },
+    {
+      "full_name": "anthropics/claude-plugins-official",
+      "mentions": 1,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/python.xml"
+      ]
+    },
+    {
+      "full_name": "headroomlabs-ai/headroom",
+      "mentions": 1,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/python.xml"
+      ]
+    },
+    {
+      "full_name": "Alishahryar1/free-claude-code",
+      "mentions": 1,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/python.xml"
+      ]
+    },
+    {
+      "full_name": "ahujasid/mcp-for-blender",
+      "mentions": 1,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/python.xml"
+      ]
+    },
+    {
+      "full_name": "realiti4/claude-swap",
+      "mentions": 1,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/python.xml"
+      ]
+    },
+    {
+      "full_name": "volcengine/OpenViking",
+      "mentions": 1,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/python.xml"
+      ]
+    },
+    {
+      "full_name": "langchain-ai/langgraph",
+      "mentions": 1,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/python.xml"
+      ]
+    },
+    {
+      "full_name": "kajisho5/ffmpeg-skill",
+      "mentions": 1,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/python.xml"
+      ]
+    },
+    {
+      "full_name": "NVIDIA/SkillSpector",
+      "mentions": 1,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/python.xml"
+      ]
+    },
+    {
+      "full_name": "mvanhorn/last30days-skill",
+      "mentions": 1,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/python.xml"
+      ]
+    },
+    {
+      "full_name": "CopilotKit/OpenBot",
+      "mentions": 1,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/typescript.xml"
+      ]
+    },
+    {
+      "full_name": "a2ui-project/a2ui",
+      "mentions": 1,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/typescript.xml"
+      ]
+    },
+    {
+      "full_name": "PurpleDoubleD/locally-uncensored",
+      "mentions": 1,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/typescript.xml"
+      ]
+    },
+    {
+      "full_name": "shanliuling/dsh-image-gen",
+      "mentions": 1,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/typescript.xml"
+      ]
+    },
+    {
+      "full_name": "EveryInc/compound-engineering-plugin",
+      "mentions": 1,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/typescript.xml"
+      ]
+    },
+    {
+      "full_name": "QwenLM/qwen-code",
+      "mentions": 1,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/typescript.xml"
+      ]
+    },
+    {
+      "full_name": "AdventDevInc/kudu",
+      "mentions": 1,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/typescript.xml"
+      ]
+    },
+    {
+      "full_name": "google-labs-code/stitch-skills",
+      "mentions": 1,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/typescript.xml"
+      ]
+    },
+    {
+      "full_name": "thesysdev/openui",
+      "mentions": 1,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/typescript.xml"
+      ]
+    },
+    {
+      "full_name": "adewaskar/jarvis",
+      "mentions": 1,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/typescript.xml"
+      ]
+    },
+    {
+      "full_name": "callstack/agent-device",
+      "mentions": 1,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/typescript.xml"
+      ]
+    },
+    {
+      "full_name": "abhigyanpatwari/GitNexus",
+      "mentions": 1,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/typescript.xml"
+      ]
+    },
+    {
+      "full_name": "lidge-jun/opencodex",
+      "mentions": 1,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/typescript.xml"
+      ]
+    },
+    {
+      "full_name": "actions/checkout",
+      "mentions": 1,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/typescript.xml"
+      ]
+    },
+    {
+      "full_name": "huamidev/GestaltX",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-08 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "Kianuni/Erosion-CN",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-08 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "deepseek-ai/chat-demo",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-08 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "apex-compute/ANR",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-08 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "FrigadeHQ/yogurt",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-08 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "HybridRobotics/supermimic",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-08 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "agentes-chat/agentes-chat",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-08 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "HolyArrs/HolyArrs",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-08 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "DevedevT/FFmpeg-GUI-Editor-Windows",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-08 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "adriadam10/mkw-recomp",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-08 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "kolbicz/WQFiles",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-08 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "alexeyw/lot-map",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-08 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "serveroshq/panel",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-08 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "JDhruv14/line-art-animation",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-08 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "opencoredev/islandcn",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-08 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "Eynnzerr/TelemetryCleaner",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-08 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "Topkiflare74/ai--manus2.0",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-08 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "WarriorRemember/IPTV_Player_2.0",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-08 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "trackboatwrightplan/GitHub-Copilot-app",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-08 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "TrapAccountant/GitHub-Copilot-app",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-08 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "TurquoiseDetective/IPTV_Player_2.0",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-08 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "tornadonovicewhirl40/IPTV_Player_2.0",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-08 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "WattBeetleLearn/IPTV_Player_2.0",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-08 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "topapothecarycanal/ai--manus2.0",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-08 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "Trapbraneedle/IPTV_Player_2.0",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-08 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "trackersnailgrip/GitHub-Copilot-app",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-08 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "Titanlushrink/IPTV_Player_2.0",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-08 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "TradesmanRecord/GitHub-Copilot-app",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-08 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "toppatronweave/ai--manus2.0",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-08 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "toppatronweave/GitHub-Copilot-app",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-08 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "Torusdrasocket/IPTV_Player_2.0",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-08 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "TowerStalker/IPTV_Player_2.0",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-08 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "TurkeyDesignate/GitHub-Copilot-app",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-08 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "TurquoiseConsultant/GitHub-Copilot-app",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-08 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "TrapBladesmith/GitHub-Copilot-app",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-08 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "WebBookkeeper/GitHub-Copilot-app",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-08 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "Tealplesense/GitHub-Copilot-app",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-08 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "Tornadovonmodify/IPTV_Player_2.0",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-08 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "topconstableinlet67/ai--manus2.0",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-08 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "TorrentArrow/IPTV_Player_2.0",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-08 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "unitsenseimonitor/GitHub-Copilot-app",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-08 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "topconstableinlet67/GitHub-Copilot-app",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-08 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "tremorbuffalospire/IPTV_Player_2.0",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-08 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "TrueDefenderRouter/GitHub-Copilot-app",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-08 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "TurquoiseFarmer/IPTV_Player_2.0",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-08 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "Topkiflare74/IPTV_Player_2.0",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-08 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "Trapkrostride/GitHub-Copilot-app",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-08 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "TarantulaCorrect/GitHub-Copilot-app",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-08 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "tornadonovicewhirl40/ai--manus2.0",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-08 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "TitanShieldRavine/ai--manus2.0",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-08 stars:>=50"
+      ]
+    }
+  ]
+}
