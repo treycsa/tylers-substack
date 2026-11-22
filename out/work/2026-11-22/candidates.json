@@ -1,0 +1,683 @@
+{
+  "scanned_posts": 106,
+  "source": "github",
+  "scanned_label": "106 repos surfaced across GitHub trending + new-repo search",
+  "candidates": [
+    {
+      "full_name": "elementalsouls/Claude-BugHunter",
+      "mentions": 2,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/all.xml",
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/python.xml"
+      ]
+    },
+    {
+      "full_name": "HKUDS/CLI-Anything",
+      "mentions": 2,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/all.xml",
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/python.xml"
+      ]
+    },
+    {
+      "full_name": "jingyaogong/minimind",
+      "mentions": 2,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/all.xml",
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/python.xml"
+      ]
+    },
+    {
+      "full_name": "cursor/plugins",
+      "mentions": 2,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/all.xml",
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/typescript.xml"
+      ]
+    },
+    {
+      "full_name": "firecrawl/firecrawl",
+      "mentions": 2,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/all.xml",
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/typescript.xml"
+      ]
+    },
+    {
+      "full_name": "mvanhorn/last30days-skill",
+      "mentions": 2,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/all.xml",
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/python.xml"
+      ]
+    },
+    {
+      "full_name": "google-labs-code/stitch-skills",
+      "mentions": 2,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/all.xml",
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/typescript.xml"
+      ]
+    },
+    {
+      "full_name": "Tracer-Cloud/opensre",
+      "mentions": 2,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/all.xml",
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/python.xml"
+      ]
+    },
+    {
+      "full_name": "toeverything/AFFiNE",
+      "mentions": 2,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/all.xml",
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/typescript.xml"
+      ]
+    },
+    {
+      "full_name": "XiaoYouChR/Ghost-Downloader-3",
+      "mentions": 2,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/all.xml",
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/python.xml"
+      ]
+    },
+    {
+      "full_name": "zhouxiaoka/autoclip",
+      "mentions": 2,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/all.xml",
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/python.xml"
+      ]
+    },
+    {
+      "full_name": "obra/superpowers",
+      "mentions": 1,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/all.xml"
+      ]
+    },
+    {
+      "full_name": "nginx/nginx",
+      "mentions": 1,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/all.xml"
+      ]
+    },
+    {
+      "full_name": "openvinotoolkit/openvino",
+      "mentions": 1,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/all.xml"
+      ]
+    },
+    {
+      "full_name": "cathrynlavery/diagram-design",
+      "mentions": 1,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/all.xml"
+      ]
+    },
+    {
+      "full_name": "mjmirza/app-store-compliance",
+      "mentions": 1,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/all.xml"
+      ]
+    },
+    {
+      "full_name": "Imbad0202/academic-research-skills",
+      "mentions": 1,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/python.xml"
+      ]
+    },
+    {
+      "full_name": "wshobson/agents",
+      "mentions": 1,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/python.xml"
+      ]
+    },
+    {
+      "full_name": "apache/airflow",
+      "mentions": 1,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/python.xml"
+      ]
+    },
+    {
+      "full_name": "microsoft/markitdown",
+      "mentions": 1,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/python.xml"
+      ]
+    },
+    {
+      "full_name": "SWE-agent/mini-swe-agent",
+      "mentions": 1,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/python.xml"
+      ]
+    },
+    {
+      "full_name": "pytorch/torchtitan",
+      "mentions": 1,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/python.xml"
+      ]
+    },
+    {
+      "full_name": "awslabs/cli-agent-orchestrator",
+      "mentions": 1,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/python.xml"
+      ]
+    },
+    {
+      "full_name": "vllm-project/vllm-ascend",
+      "mentions": 1,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/python.xml"
+      ]
+    },
+    {
+      "full_name": "FlashML-org/FreeVideo",
+      "mentions": 1,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/python.xml"
+      ]
+    },
+    {
+      "full_name": "superdesigndev/treg",
+      "mentions": 1,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/python.xml"
+      ]
+    },
+    {
+      "full_name": "p-e-w/heretic",
+      "mentions": 1,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/python.xml"
+      ]
+    },
+    {
+      "full_name": "github/spec-kit",
+      "mentions": 1,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/python.xml"
+      ]
+    },
+    {
+      "full_name": "phone-harness/phone-harness",
+      "mentions": 1,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/python.xml"
+      ]
+    },
+    {
+      "full_name": "odoo/odoo",
+      "mentions": 1,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/python.xml"
+      ]
+    },
+    {
+      "full_name": "agentscope-ai/agentscope",
+      "mentions": 1,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/python.xml"
+      ]
+    },
+    {
+      "full_name": "google-research/paper-orchestra",
+      "mentions": 1,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/python.xml"
+      ]
+    },
+    {
+      "full_name": "bendlang/bend",
+      "mentions": 1,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/typescript.xml"
+      ]
+    },
+    {
+      "full_name": "appwrite/appwrite",
+      "mentions": 1,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/typescript.xml"
+      ]
+    },
+    {
+      "full_name": "mastra-ai/mastra",
+      "mentions": 1,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/typescript.xml"
+      ]
+    },
+    {
+      "full_name": "tianma-if/edgeever",
+      "mentions": 1,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/typescript.xml"
+      ]
+    },
+    {
+      "full_name": "twentyhq/twenty",
+      "mentions": 1,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/typescript.xml"
+      ]
+    },
+    {
+      "full_name": "hieunc229/mailflare",
+      "mentions": 1,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/typescript.xml"
+      ]
+    },
+    {
+      "full_name": "colbymchenry/codegraph",
+      "mentions": 1,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/typescript.xml"
+      ]
+    },
+    {
+      "full_name": "visgl/deck.gl",
+      "mentions": 1,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/typescript.xml"
+      ]
+    },
+    {
+      "full_name": "Fission-AI/OpenSpec",
+      "mentions": 1,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/typescript.xml"
+      ]
+    },
+    {
+      "full_name": "solidjs/solid",
+      "mentions": 1,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/typescript.xml"
+      ]
+    },
+    {
+      "full_name": "croffasia/itsaplan",
+      "mentions": 1,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/typescript.xml"
+      ]
+    },
+    {
+      "full_name": "anomalyco/opencode",
+      "mentions": 1,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/typescript.xml"
+      ]
+    },
+    {
+      "full_name": "earendil-works/pi",
+      "mentions": 1,
+      "sources": [
+        "https://mshibanami.github.io/GitHubTrendingRSS/daily/typescript.xml"
+      ]
+    },
+    {
+      "full_name": "erkamyaman/rust-anything",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-15 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "ItsNotRexed/Leonida",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-15 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "krisgfx9/Wireless-Device-Battery-Monitor",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-15 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "bookwjitchieni1986/blender-ai-mcp-addon",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-15 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "gylive/google-ultra",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-15 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "iamajmeena/neonclipping",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-15 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "sybil-solutions/inference-optimisation-skill",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-15 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "hatsunemiku-ai/google-one-tools",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-15 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "chuanqisun/spaceship",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-15 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "R0Y00/Xbox2Windows",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-15 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "siliconjungle/shapeshift-labs-ink-studio",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-15 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "Lemxy/WinRust",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-15 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "omonkeyz/xbox-emulator",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-15 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "boringmarketer/boring-marketing-skills",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-15 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "MSNightmare/FastUnlock",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-15 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "0xkaka/homeport",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-15 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "nataphong-lab/Open-Source-Face-Recognition-Ultimate",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-15 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "replit/datacat",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-15 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "Illson/RustText",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-15 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "CocoSgt/riemann-hypothesis-lean",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-15 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "leanprover-community/riemann-hypothesis",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-15 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "duwqijlk/google-trial-tool",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-15 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "sybil-solutions/skill-distill",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-15 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "CoderL98/hghub-plugins",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-15 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "danielwh2/sprite-stacking",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-15 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "opokukopoku/gta-6-pc-release",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-15 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "staryone/motlab",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-15 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "kyle-millerx2098t3/daw-synth-fl-studio-2026-producer-portable-x64",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-15 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "antonhall-x91s9/discord-local-uncensored-ai-activity-utility-quest-auto-po",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-15 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "danx1905k8/war-thunder-realistic-tank-outline-thermal-portable-x64",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-15 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "scarletkc/colab-playground",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-15 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "leonmiller-io01l1/gta-6-vice-city-ps5-remote-play-60fps-portable-x64",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-15 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "markdevx1901r4/shadps4-bloodborne-pc-60fps-patch-vertex-explosion-portabl",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-15 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "waw666waw666/RegisterHub",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-15 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "nickcode-01e6/samsung-android-mtp-unlocktool-portable-loader-xiaomi-port",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-15 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "ryanhall-2095a5/xeno-bootstrapper-multi-instance-roblox-account-portable-x",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-15 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "nikita-deveng1999g0/switch-emulator-keys-firmware-nsp-box-xci-nsp-portable-x64",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-15 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "kyle-moore-code2001v1/marvel-rivals-hitscan-projectile-smoothing-assistant-porta",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-15 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "artem-petrovlab04i2/counter-strike-2-inventory-skin-knife-glove-portable-x64",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-15 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "eric-lopezdev1992b4/polar-client-skyblock-mining-2026",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-15 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "tristanbuckmaster/navier-stokes",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-15 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "sergeygarcia-devo0/wave-velocity-bootstrapper-external-luau-loader-serial-por",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-15 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "marcus-ali-lab1905z4/path-of-exile-2-map-reveal-zoom-out-portable-x64",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-15 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "jake-j-19d3/discord-local-uncensored-ai-deep-live-cam-v2-portable-x64",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-15 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "ericmoorecode2001j6/monster-hunter-wilds-reframework-download",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-15 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "danielrops99q3/deadlock-minimap-cooldown-jungle-timer-portable-x64",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-15 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "daviddevhq98y8/monster-hunter-wilds-reframework",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-15 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "felixrajdev2096h7/fivem-citizenfx-adhesive-utility-clean-cleaner-portable-x6",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-15 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "dave-wilsoncode1999d3/elden-ring-nightreign-standalone-trainer-relic-murk-portab",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-15 stars:>=50"
+      ]
+    },
+    {
+      "full_name": "ryan-v-x2003c8/ea-sports-fc-26-green-timed-finishing-legacy-portable-x64",
+      "mentions": 1,
+      "sources": [
+        "github-search:created:>2026-11-15 stars:>=50"
+      ]
+    }
+  ]
+}
